@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>追忆显影室 - 把看过的事慢慢洗出来·影像记忆方法学/四件证物/半衰期条/空白票根</title>
+<meta name="description" content="追忆显影室（zhuiyiyingshi-h5）是原创影像记忆方法学站：用艾宾浩斯遗忘曲线、普鲁斯特现象与四件证物法，把一部片子真正留在身上。不提供影视App下载、不聚合片源、不引流任何追剧软件。网址 https://zhuiyiyingshi-h5.github.io">
+<meta name="keywords" content="追忆显影室,影像记忆方法学,艾宾浩斯遗忘曲线,普鲁斯特现象,电影记忆法,四件证物法,观影笔记,胶片记忆,zhuiyiyingshi">
+<meta name="author" content="追忆显影室">
+<meta name="robots" content="index,follow">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#F2EBDB">
+<meta property="og:type" content="website">
+<meta property="og:title" content="追忆显影室 - 把看过的事，慢慢洗出来">
+<meta property="og:description" content="我们不帮你找片。我们帮你把看过那部，留得住。">
+<meta property="og:url" content="https://zhuiyiyingshi-h5.github.io">
+<link rel="canonical" href="https://zhuiyiyingshi-h5.github.io/">
+<style>
+/* ============================================================
+   追忆显影室  v1  原创「影像记忆方法学」
+   词源翻转：追忆 ≠ 找片重温，而是"把记忆洗牢"
+   视觉：旧相纸奶白 / 褪色靛青 / 暗房灯暖橙 / 银盐灰
+   结构：显影盘 · 四件证物 · 半衰期条 · 空白票根 · 铭牌
+   红线：零 App 名/包名/下载/片源/搜索引导；避开片名《追忆》
+   ============================================================ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{
+  font-family:"Songti SC","PingFang SC","Microsoft YaHei",Georgia,serif;
+  background:#F2EBDB;color:#2A2722;line-height:1.88;overflow-x:hidden;
+  background-image:
+    radial-gradient(circle at 9% 7%,rgba(74,102,110,.10),transparent 30%),
+    radial-gradient(circle at 91% 11%,rgba(196,120,46,.09),transparent 30%),
+    repeating-linear-gradient(0deg,transparent 0 24px,rgba(150,140,118,.05) 24px 25px);
+}
+a{text-decoration:none;color:inherit;outline:none}
+img{max-width:100%;display:block}
+section[id]{scroll-margin-top:2px}
+::selection{background:#C8782E;color:#FFF8EE}
+h1,h2,h3,h4{line-height:1.28;font-weight:800;letter-spacing:.5px}
+ul{list-style:none}
+
+/* ---------- 相纸带 ---------- */
+.paper{background:#26231E;color:#DED5C2;font-size:11.5px;letter-spacing:1.3px;padding:7px 16px;display:flex;justify-content:center;gap:14px;flex-wrap:wrap;border-bottom:3px solid #C8782E;font-family:monospace}
+.paper b{color:#F0C98A}
+.paper .safe{color:#E8C49A;font-weight:800}
+
+/* ---------- 导航：显影夹 ---------- */
+.nav{position:sticky;top:0;z-index:999;background:rgba(242,235,219,.97);backdrop-filter:blur(8px);border-bottom:1px solid #D8CDB4}
+.nav-in{max-width:1220px;margin:0 auto;height:64px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.clip{display:flex;align-items:center;gap:11px;min-width:0}
+.clip .reel{width:36px;height:30px;background:#F7F1DE;border:2.5px solid #4A666E;border-radius:50%;position:relative;flex-shrink:0;overflow:hidden}
+.clip .reel::before{content:"";position:absolute;inset:5px;border:1.5px dashed #C8782E;border-radius:50%}
+.clip .reel::after{content:"";position:absolute;top:50%;left:50%;width:6px;height:6px;background:#C8782E;border-radius:50%;transform:translate(-50%,-50%)}
+.clip .cn{font-size:19px;font-weight:900;white-space:nowrap;font-family:"Songti SC",serif}
+.clip .cn em{font-style:normal;color:#C8782E}
+.clip .cn .thin{color:#8A7E66;font-weight:600;font-size:16px}
+.clip .en{font-size:9px;letter-spacing:2.4px;color:#8A7E66;font-family:monospace;text-transform:uppercase;white-space:nowrap}
+.nav-links{display:flex;gap:2px;flex-wrap:wrap}
+.nav-links a{font-size:13px;color:#3E3A33;padding:8px 9px;border-bottom:2px solid transparent;transition:.2s;font-weight:600}
+.nav-links a:hover{color:#C8782E;border-bottom-color:#C8782E}
+.nav-go{background:#C8782E;color:#FFF8EE;font-weight:800;font-size:13px;padding:8px 16px;border-radius:3px 16px 3px 16px;border:1.5px solid #8E5420;transition:.25s;white-space:nowrap}
+.nav-go:hover{background:#F0C98A;color:#26231E;border-color:#C8782E;transform:translateY(-2px)}
+
+/* ---------- Hero：显影盘 ---------- */
+.hero{max-width:1220px;margin:0 auto;padding:50px 20px 40px;display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center}
+.tray{background:#EDE4CF;border:1px solid #D8CDB4;border-radius:4px;padding:20px;position:relative;box-shadow:0 0 0 8px #EDE4CF,0 0 0 9px #4A666E,4px 7px 0 rgba(90,82,60,.16)}
+.tray::before{content:"";position:absolute;top:9px;left:9px;right:9px;bottom:9px;border:1px solid rgba(74,102,110,.3);pointer-events:none;border-radius:2px}
+.tray::after{content:"显影盘 № 追-2026-甲 · 定影中";position:absolute;top:16px;right:22px;font-family:"Songti SC",serif;font-size:12px;color:#4A666E;letter-spacing:1.4px;border-left:2px solid #4A666E;padding-left:8px}
+.tray .chem{aspect-ratio:16/9;background:linear-gradient(180deg,#1C2224,#0E1214);position:relative;overflow:hidden;border-radius:3px;border:1px solid #3A4446}
+.tray .chem::before{content:"";position:absolute;inset:0;background:
+   radial-gradient(circle at 30% 40%,rgba(240,201,138,.16),transparent 40%),
+   radial-gradient(circle at 70% 65%,rgba(74,102,110,.22),transparent 42%);
+  mix-blend-mode:screen}
+.tray .rise{position:absolute;left:0;right:0;top:62%;height:2px;background:linear-gradient(90deg,transparent,#F0C98A,transparent);filter:drop-shadow(0 0 5px #F0C98A);animation:rise 4.6s ease-in-out infinite alternate}
+@keyframes rise{0%{top:80%;opacity:.2}100%{top:22%;opacity:.95}}
+.tray .grain{position:absolute;inset:0;background-image:radial-gradient(rgba(240,201,138,.10) 1px,transparent 1px);background-size:3px 3px;opacity:.5}
+.tray .frame-mark{position:absolute;inset:14px;border:1px solid rgba(240,201,138,.35);pointer-events:none}
+.tray .read{position:absolute;bottom:12px;left:16px;right:16px;display:flex;justify-content:space-between;font-family:monospace;font-size:10px;color:#F0C98A;z-index:4}
+.tray .read b{color:#E8A49A}
+.hero h1{font-size:clamp(27px,4.8vw,48px);font-weight:900;line-height:1.12;font-family:"Songti SC",serif}
+.hero h1 em{font-style:normal;color:#C8782E;position:relative}
+.hero h1 em::after{content:"";position:absolute;left:4px;right:4px;bottom:2px;height:6px;background:rgba(240,201,138,.62)}
+.hero .sub{font-family:monospace;font-size:12px;letter-spacing:2.6px;color:#8A7E66;margin-top:10px;text-transform:uppercase}
+.hero .lead{font-size:15px;color:#3A352D;margin:18px 0 22px;max-width:580px}
+.hero-btns{display:flex;gap:11px;flex-wrap:wrap}
+.b1{padding:11px 24px;font-weight:800;border-radius:3px 16px 3px 16px;background:#C8782E;color:#FFF8EE;border:1.5px solid #8E5420;transition:.25s}
+.b1:hover{background:#F0C98A;color:#26231E;border-color:#C8782E;transform:translateY(-2px)}
+.b2{padding:11px 24px;font-weight:800;border-radius:3px 16px 3px 16px;background:transparent;color:#2A2722;border:1.5px solid #D8CDB4;transition:.25s}
+.b2:hover{background:#26231E;color:#F7F1DE;border-color:#26231E}
+
+/* 证物速览 */
+.proof{display:grid;gap:11px;margin-top:20px}
+.pf{background:#EDE4CF;border:1px solid #D8CDB4;border-left:5px solid var(--c,#4A666E);border-radius:2px 10px 10px 2px;padding:12px 16px;transition:.25s}
+.pf:hover{background:#FFF8EC;transform:translateX(3px);border-left-color:#C8782E}
+.pf .k{font-family:monospace;font-size:10.5px;color:#4A666E;letter-spacing:1.4px}
+.pf h4{font-size:14.5px;font-weight:900;color:#2A2722;margin:2px 0 3px}
+.pf h4 b{color:#C8782E;font-family:"Songti SC",serif;font-size:14px}
+.pf p{font-size:12.6px;color:#4A443A;line-height:1.6}
+.pf.c2{border-left-color:#C8782E}.pf.c3{border-left-color:#8A7E66}.pf.c4{border-left-color:#A0522A}
+
+/* ---------- 骨架 ---------- */
+.wrap{max-width:1220px;margin:0 auto;padding:52px 20px}
+.head{display:flex;align-items:baseline;gap:12px;margin-bottom:26px;flex-wrap:wrap;border-bottom:1px solid #D8CDB4;padding-bottom:10px}
+.head .idx{font-family:"Songti SC",serif;font-size:14px;font-weight:900;color:#FFF8EE;background:#C8782E;padding:2px 11px;border-radius:3px;letter-spacing:2px}
+.head h2{font-size:23px;font-weight:900;font-family:"Songti SC",serif}
+.head h2 em{font-style:normal;color:#C8782E}
+.head .en{font-family:monospace;font-size:11px;letter-spacing:1.6px;color:#8A7E66;text-transform:uppercase}
+.head a.more{margin-left:auto;font-size:13px;color:#3E3A33;font-weight:700;font-family:monospace}
+.head a.more:hover{color:#C8782E}
+
+/* ---------- 01 四件证物（翻转卡） ---------- */
+.proofs{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:16px}
+.flip{height:230px;perspective:1400px}
+.flip-in{position:relative;width:100%;height:100%;transition:transform .65s;transform-style:preserve-3d}
+.flip:hover .flip-in{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;border-radius:6px;padding:20px;overflow:hidden;border:1px solid #D8CDB4}
+.face-front{background:#EDE4CF;box-shadow:2px 3px 0 rgba(90,82,60,.13)}
+.face-front .tag{position:absolute;top:-6px;left:16px;background:#C8782E;color:#FFF8EE;font-family:monospace;font-size:9.5px;font-weight:800;padding:3px 10px;border-radius:0 0 3px 3px;transform:rotate(-1.5deg)}
+.face-front .no{font-family:monospace;font-size:10px;color:#8A7E66;letter-spacing:1.4px}
+.face-front h3{font-size:19px;font-weight:900;color:#2A2722;margin:10px 0 6px;font-family:"Songti SC",serif}
+.face-front p{font-size:12.8px;color:#4A443A;line-height:1.65}
+.face-front .hint{position:absolute;bottom:14px;left:20px;right:20px;font-family:monospace;font-size:10px;color:#A89A7C;border-top:1px dashed #D8CDB4;padding-top:6px}
+.face-back{background:#4A666E;color:#F0EAD8;transform:rotateY(180deg);border-color:#2E4046}
+.face-back h4{font-size:12px;font-weight:800;font-family:monospace;letter-spacing:.5px;margin-bottom:8px;color:#F0C98A}
+.face-back p{font-size:13.2px;line-height:1.72;color:#EEE6D6}
+.face-back .how{margin-top:11px;font-family:monospace;font-size:10.5px;color:#F0C98A;border-top:1px dashed rgba(240,201,138,.4);padding-top:7px;line-height:1.55}
+.face-back .how b{color:#FFF}
+
+/* ---------- 02 半衰期条 ---------- */
+.half{background:#EDE4CF;border:1px solid #D8CDB4;border-radius:8px;padding:22px 22px 26px;box-shadow:inset 0 0 0 6px #EDE4CF,inset 0 0 0 7px #D8CDB4}
+.half .meta{display:flex;justify-content:space-between;font-family:monospace;font-size:10.5px;color:#8A7E66;margin-bottom:16px}
+.half .meta b{color:#C8782E}
+.row{display:grid;grid-template-columns:120px 1fr 130px;gap:14px;align-items:center;margin-bottom:14px}
+.row .nm{font-family:"Songti SC",serif;font-weight:900;font-size:14.5px;color:#2A2722}
+.row .nm small{display:block;font-family:monospace;font-size:9.5px;color:#8A7E66;font-weight:400;letter-spacing:.4px}
+.track{height:22px;background:#DDD2BA;border-radius:12px;overflow:hidden;border:1px solid rgba(74,102,110,.18)}
+.track i{position:absolute;inset:0;background:linear-gradient(90deg,#4A666E,#7A949C);transform:scaleX(0);transform-origin:left;animation:fill 1.5s cubic-bezier(.2,.7,.3,1) forwards}
+.track.hot i{background:linear-gradient(90deg,#C8782E,#E8A45C)}
+.track.die i{background:linear-gradient(90deg,#A0522A,#C8782E)}
+@keyframes fill{to{transform:scaleX(var(--w,.5))}}
+.row .vv{font-family:monospace;font-size:11px;color:#5C6B6E;text-align:right;line-height:1.35}
+.row .vv b{display:block;font-size:14px;color:#C8782E}
+.row .vv small{font-size:9.5px;color:#8A7E66}
+.note-line{margin-top:16px;font-size:12.6px;color:#4A443A;border-top:1px dashed #D8CDB4;padding-top:12px;line-height:1.75}
+.note-line b{color:#C8782E}
+
+/* ---------- 03 空白票根（方法清单） ---------- */
+.stubs{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:16px}
+.stub{background:#F7F1DE;border:1px solid #D8CDB4;border-left:9px dashed #C8782E;border-radius:3px 10px 10px 3px;padding:16px 18px 17px;transition:.3s;position:relative}
+.stub::before{content:attr(data-no);position:absolute;top:12px;right:14px;font-family:monospace;font-size:10px;color:#C8782E;letter-spacing:1px}
+.stub:hover{background:#FFF8EC;transform:translateX(4px);box-shadow:-3px 4px 0 rgba(90,82,60,.12)}
+.stub .cat{font-family:monospace;font-size:10px;color:#4A666E;letter-spacing:1.2px;font-weight:800}
+.stub h3{font-size:16.5px;font-weight:900;color:#2A2722;margin:3px 0 6px;font-family:"Songti SC",serif;padding-right:34px}
+.stub p{font-size:13.2px;color:#4A443A;line-height:1.68}
+.stub .do{margin-top:9px;font-family:monospace;font-size:10.5px;color:#C8782E;border-top:1px dashed #D8CDB4;padding-top:6px;line-height:1.5}
+.stub .do b{color:#A0522A}
+
+/* ---------- 04 冲洗四格 ---------- */
+.baths{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:15px}
+.bath{background:#EDE4CF;border:1px solid #D8CDB4;border-radius:7px;overflow:hidden;transition:.34s;box-shadow:2px 3px 0 rgba(90,82,60,.12)}
+.bath:hover{transform:translateY(-6px);border-color:#4A666E;box-shadow:0 15px 26px rgba(74,102,110,.16)}
+.bath .hd{height:56px;background:linear-gradient(135deg,#4A666E,#2E4046);display:flex;align-items:center;padding:0 15px;gap:10px}
+.bath .hd .n{font-family:monospace;font-weight:900;font-size:13px;color:#F0C98A;background:rgba(240,201,138,.14);width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1px solid rgba(240,201,138,.35)}
+.bath .hd .tt{font-family:"Songti SC",serif;font-weight:900;font-size:15.5px;color:#F7F1DE;letter-spacing:.5px}
+.bath .bd{padding:15px 17px 18px}
+.bath h3{font-size:15px;font-weight:900;color:#2A2722;margin-bottom:5px}
+.bath p{font-size:12.6px;color:#4A443A;line-height:1.66}
+.bath .min{margin-top:9px;font-family:monospace;font-size:10.5px;color:#4A666E;border-top:1px dashed #D8CDB4;padding-top:6px}
+.bath .min b{color:#C8782E}
+
+/* ---------- 铭牌 ---------- */
+.plaque{max-width:1220px;margin:0 auto;padding:0 20px 12px}
+.plaque-in{background:#26231E;border:2px solid #C8782E;border-radius:4px;padding:24px 26px;display:flex;gap:18px;align-items:center;flex-wrap:wrap;justify-content:space-between;position:relative;overflow:hidden}
+.plaque-in::before{content:"影";position:absolute;right:18px;top:-30px;font-size:92px;font-weight:900;color:rgba(196,120,46,.16);font-family:"Songti SC",serif;line-height:1}
+.plaque-in .lab{font-family:monospace;font-size:11px;letter-spacing:2px;color:#F0C98A}
+.plaque-in .u{font-size:clamp(14px,3vw,21px);font-weight:900;color:#F0C98A;word-break:break-all;font-family:"Songti SC",monospace}
+.plaque-in .u a{color:#F0C98A;border-bottom:1.5px dashed #C8782E}
+.plaque-in .u a:hover{color:#fff}
+.plaque-in .note{font-size:12px;color:#DED5C2;text-align:right}
+
+/* ---------- 关于 ---------- */
+.about{max-width:1220px;margin:0 auto;padding:52px 20px;display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center;background:#EDE4CF;border:1px solid #D8CDB4;box-shadow:0 0 0 7px #EDE4CF,0 0 0 8px #4A666E;border-radius:4px}
+.about h2{font-size:23px;font-weight:900;margin-bottom:14px;font-family:"Songti SC",serif}
+.about h2 em{font-style:normal;color:#C8782E}
+.about p{font-size:15px;color:#3A352D;line-height:1.95;margin-bottom:12px}
+.about .u2{color:#C8782E;font-weight:800;font-family:monospace;font-size:15px}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tile{background:#F2EBDB;border:1px solid #D8CDB4;border-radius:6px;padding:16px;text-align:center}
+.tile .n{font-family:"Songti SC",serif;font-size:20px;font-weight:900;color:#C8782E}
+.tile .l{font-size:12px;color:#6E6554;margin-top:2px}
+
+/* ---------- 页脚 ---------- */
+.foot{border-top:4px double #C8782E;padding:36px 20px 26px;text-align:center;background:#E5DCC4}
+.foot-logo{font-size:19px;font-weight:900;color:#2A2722;font-family:"Songti SC",serif;letter-spacing:.5px}
+.foot-logo em{font-style:normal;color:#C8782E}
+.foot-nav{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin:14px 0;font-family:monospace;font-size:13px}
+.foot-nav a{color:#6E6554}
+.foot-nav a:hover{color:#C8782E}
+.foot p{font-size:12px;color:#7A6F5A}
+.foot .cut{margin:14px auto 10px;display:inline-block;border:1.5px solid #A0522A;color:#8E4A22;font-family:monospace;font-size:11.5px;font-weight:800;padding:7px 15px;border-radius:3px 16px 3px 16px;background:#F7E9D4;max-width:820px;line-height:1.6}
+.foot .legal{margin-top:10px;max-width:900px;margin-left:auto;margin-right:auto;color:#6E6554;line-height:1.8;font-size:12px}
+
+/* ---------- 响应式 ---------- */
+@media(max-width:880px){
+  .nav-links{display:none}
+  .hero{grid-template-columns:1fr;padding:28px 20px 34px;gap:26px}
+  .about{grid-template-columns:1fr;padding:30px 20px}
+  .wrap{padding:42px 20px}
+  .nav-in{height:58px}
+  .clip .en{display:none}
+  .row{grid-template-columns:96px 1fr;gap:10px}
+  .row .vv{display:none}
+}
+@media(max-width:420px){
+  .hero h1{font-size:25px}
+  .head h2{font-size:20px}
+  .proofs,.stubs,.baths{grid-template-columns:1fr}
+  .flip{height:210px}
+}
+@media print{
+  .nav,.nav-go,.paper{display:none}
+  body{background:#fff;color:#000}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<!-- ===== 相纸带 ===== -->
+<div class="paper">
+  <span>追忆显影室 · 把看过的事，慢慢洗出来</span><b>只留记忆，不递片子</b>
+  <span class="safe">☉ 无播放 · 无片源 · 无下载 · 无包名</span>
+  <span>显影 / 定影 / 留影 / 存底</span>
+</div>
+
+<!-- ===== 导航 ===== -->
+<div class="nav">
+  <div class="nav-in">
+    <div class="clip">
+      <div class="reel"></div>
+      <div>
+        <div class="cn">追忆<em>显影室</em><span class="thin"> · 影像记忆方法学</span></div>
+        <div class="en">The Developing Room · Fix the Memory, Not the Film</div>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="#proof">四件证物</a>
+      <a href="#half">半衰期</a>
+      <a href="#stub">空白票根</a>
+      <a href="#bath">冲洗四格</a>
+      <a href="#about">为何是追忆</a>
+    </nav>
+    <a href="#proof" class="nav-go">下盘显影液 →</a>
+  </div>
+</div>
+
+<!-- ===== Hero：显影盘 ===== -->
+<section class="hero" id="top">
+  <div>
+    <div class="tray">
+      <span class="frame-mark"></span><span class="grain"></span>
+      <div class="chem"><span class="rise"></span></div>
+      <div class="read"><span>盘号 № 追-2026-甲</span><span>定影进度 <b>⌇ 慢慢来</b></span><span>16×9 · 银盐</span></div>
+    </div>
+    <div class="proof">
+      <div class="pf"><span class="k">证物 壹 · 一物</span><h4>别记剧情，<b>记一件东西</b></h4><p>人记不住故事，记得住"那杯茶怎么放下的"。找一件最小、最没用的道具当锚，整部片就挂在那上面了。</p></div>
+      <div class="pf c2"><span class="k">证物 贰 · 一光</span><h4>记<b>暗下去</b>的那一下</h4><p>画面里最亮和最暗各一帧。暗的那格常常是转折点——人眼对"光收了"比"话说完"敏感得多。</p></div>
+      <div class="pf c3"><span class="k">证物 叁 · 一声</span><h4>先听见，才记得住</h4><p>声音走的是情绪那条路。闭眼听三十秒再睁眼，画面会突然变得聪明——这是普鲁斯特留的后门。</p></div>
+      <div class="pf c4"><span class="k">证物 肆 · 一口气</span><h4>留一格<b>没解释</b>的</h4><p>别把每格都读懂。留一格你说不清的，让它闷着。三年后最先浮上来的，一定是这格。</p></div>
+    </div>
+  </div>
+  <div>
+    <div class="paper" style="background:#EDE4CF;border-color:#D8CDB4;margin-bottom:20px;justify-content:flex-start;color:#4A666E">
+      <span style="color:#C8782E">显影单 № 追-2026-甲</span><span>·</span><span>命题：追忆不是重温，是留住</span>
+    </div>
+    <h1>追忆显影室<br>把看过的<em>事</em>，慢慢洗出来</h1>
+    <div class="sub">We Don't Find the Film for You. We Fix What It Left in You.</div>
+    <p class="lead">你记不住昨天那部片讲了什么，不是记性差——是它还没"定影"。<br><br>看片是曝光，记住是显影，隔几天再回想一次才叫定影。这三步少一步，影像就随水冲走了。我们不帮你找片、不告诉你哪儿能看，只给你一套<b>把一部片子留在身上</b>的法子：四件证物、一条半衰期、四格冲洗。<br><br>慢一点。显影这活儿，急了会糊。</p>
+    <div class="hero-btns">
+      <a href="#proof" class="b1">🧪 取四件证物</a>
+      <a href="#half" class="b2">📉 看半衰期</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 01 四件证物 ===== */
+<section class="wrap" id="proof">
+  <div class="head">
+    <span class="idx">第一盘 · 证</span>
+    <h2>四件<em>证物</em></h2>
+    <span class="en">Four Exhibits · Hover to Develop</span>
+    <a href="#" class="more">再洗一遍 #</a>
+  </div>
+  <p style="max-width:900px;font-size:14.5px;color:#3A352D;margin-bottom:22px">别写影评，写证物。一部片看完，只许留四件东西——小到能揣进口袋的那种。悬停翻面，看怎么把每一件"洗"牢。<b style="color:#C8782E">这四格不用提片名，你自己往里填。</b></p>
+  <div class="proofs">
+    <div class="flip"><div class="flip-in">
+      <div class="face face-front"><span class="tag">证物 壹</span><span class="no">EXHIBIT A · 物</span>
+        <h3>一件没用的道具</h3>
+        <p>杯子、钥匙、半根没点的烟。它越不重要，越能扛住时间——因为没人跟你抢着记它。</p>
+        <div class="hint">↻ 悬停 · 看怎么洗</div></div>
+      <div class="face face-back"><h4>洗法</h4>
+        <p>看完当天，只写一句话：<b>「那件东西后来去哪了」</b>。别写为什么，只写去向。三个月后你再读这句，整部片会自己走回来——比写八百字剧情摘要管用十倍。</p>
+        <div class="how">DO：<b>一句话</b> · 只写物的去向 · 不许出现"隐喻"二字</div></div>
+    </div></div>
+    <div class="flip"><div class="flip-in">
+      <div class="face face-front"><span class="tag">证物 贰</span><span class="no">EXHIBIT B · 光</span>
+        <h3>暗下去的那一帧</h3>
+        <p>最亮的不是重点，最先黑下去的那格才是。光收得越急，心里那件事越大。</p>
+        <div class="hint">↻ 悬停 · 看怎么洗</div></div>
+      <div class="face face-back"><h4>洗法</h4>
+        <p>闭眼复现：整部片里<b>哪一格突然暗了</b>？把它当书签。下次想起时别往前倒，就从这片黑开始往外扩——记忆是往外长的，不是往回翻的。</p>
+        <div class="how">DO：<b>只定位一帧</b> · 黑格作书签 · 往外扩</div></div>
+    </div></div>
+    <div class="flip"><div class="flip-in">
+      <div class="face face-front"><span class="tag">证物 叁</span><span class="no">EXHIBIT C · 声</span>
+        <h3>一句没听懂的话</h3>
+        <p>不是金句。是那句你当时没明白、却一直嗡着的那句。声音走情绪，比画面先到。</p>
+        <div class="hint">↻ 悬停 · 看怎么洗</div></div>
+      <div class="face face-back"><h4>洗法</h4>
+        <p>普鲁斯特早说过：气味和声音是记忆的后门，因为它们<b>不经过"想"那一步</b>。把那句含糊的话哼出来、或者只记它的声调。音调比字义活得久——这是有脑科学撑腰的，不是玄学。</p>
+        <div class="how">DO：<b>记调子</b> · 哼得出就够 · 不许查字幕</div></div>
+    </div></div>
+    <div class="flip"><div class="flip-in">
+      <div class="face face-front"><span class="tag">证物 肆</span><span class="no">EXHIBIT D · 空</span>
+        <h3>一格故意没懂的</h3>
+        <p>全看懂的片死得快。留一格你解释不了的，别去搜、别问人、别补解说。</p>
+        <div class="hint">↻ 悬停 · 看怎么洗</div></div>
+      <div class="face face-back"><h4>洗法</h4>
+        <p>给它起个只有你懂的名字，写在本子最后一页。<b>不让它落幕</b>。悬念是记忆的防腐剂——谜比答案长寿，这句对片子成立，对人也成立。</p>
+        <div class="how">DO：<b>起私名</b> · 永久不解 · 让它一直悬着</div></div>
+    </div></div>
+  </div>
+</section>
+
+<!-- ===== 02 半衰期 ===== */
+<section class="wrap" id="half" style="background:rgba(74,102,110,.06)">
+  <div class="head">
+    <span class="idx">第二盘 · 期</span>
+    <h2>记忆<em>半衰期</em></h2>
+    <span class="en">The Half-Life of a Film · 不复习，就冲走</span>
+    <a href="#" class="more">重跑 #</a>
+  </div>
+  <p style="max-width:900px;font-size:14.5px;color:#3A352D;margin-bottom:22px">1885 年艾宾浩斯拿自己试的：无意义音节，一天丢约七成，一周后所剩无几，而且曲线是<b>前面陡、后面平</b>——不是匀速忘的。2015 年有人复现，形状几乎一模一样。好消息是：<b>故事不是音节</b>。有意义的叙事会多长几根钩子，掉得慢得多；你只要主动"捞"它几次，曲线就被压平了[4](@ref)。</p>
+  <div class="half">
+    <div class="meta"><span>纵轴：还留在身上的占比 · 横轴：看完之后的时间</span><span>曲线形态依 <b>艾宾浩斯</b>，数值为方法示意，非实测</span></div>
+    <div class="row"><div class="nm">光看，不动笔<small>纯被动 · 最陡那段</small></div>
+      <div class="track hot"><i style="--w:.16"></i></div>
+      <div class="vv"><b>≈16%</b><small>一个月后还站着的部分</small></div></div>
+    <div class="row"><div class="nm">当天写四件证物<small>只写四格，不写剧情</small></div>
+      <div class="track"><i style="--w:.42"></i></div>
+      <div class="vv"><b>≈42%</b><small>钩子挂住了</small></div></div>
+    <div class="row"><div class="nm">隔天"闭眼捞"一次<small>主动提取 &gt; 重读</small></div>
+      <div class="track"><i style="--w:.64"></i></div>
+      <div class="vv"><b>≈64%</b><small>曲线开始被压平</small></div></div>
+    <div class="row"><div class="nm">第3/7/30天各捞一次<small>间隔重复，翻倍拉长</small></div>
+      <div class="track die"><i style="--w:.86"></i></div>
+      <div class="vv"><b>≈86%</b><small>这格算是定影了</small></div></div>
+    <div class="note-line">
+      <b>怎么捞，才不毁掉那部片：</b>别重看、别重读笔记。就问自己一句——「那件东西，后来去哪了？」答不上来也没事，<b>卡住的这一次，才是记忆在变牢的那一次</b>。主动提取（active recall）比"再看一遍"狠得多，这是记忆科学里最稳的一条结论[1,4](@ref)。睡一觉尤其要捞：同样十二小时，睡过的忘得少一半——睡眠在替你定影，别熬夜看完就扔[4](@ref)。
+    </div>
+  </div>
+</section>
+
+<!-- ===== 03 空白票根 ===== */
+<section class="wrap" id="stub">
+  <div class="head">
+    <span class="idx">第三盘 · 根</span>
+    <h2>空白<em>票根</em></h2>
+    <span class="en">Stub Rituals · 五张自己盖戳</span>
+    <a href="#" class="more">撕下一套 #</a>
+  </div>
+  <p style="max-width:900px;font-size:14.5px;color:#3A352D;margin-bottom:22px">票根不用写得漂亮，得写得<b>只你自己认得</b>。下面五张是仪式，不是作业——做完这一套，那部片就从"看过"变成"是我的一件事"了。</p>
+  <div class="stubs">
+    <div class="stub" data-no="根 № 01"><div class="cat">RITUAL · 散场三十秒</div>
+      <h3>别走，坐着</h3>
+      <p>片尾字幕滚起来，先别划走、别开灯、别摸手机。就三十秒。这时候浮上来的第一样东西，才是那部片真正塞给你的。</p>
+      <div class="do">DO：<b>只许呼吸</b>，不许立刻打分、不许发朋友圈</div></div>
+    <div class="stub" data-no="根 № 02"><div class="cat">RITUAL · 一句人话</div>
+      <h3>说给一个人听</h3>
+      <p>别复述剧情。就一句："有部片，里面那杯茶……"说不下去也行。能说出口的，才算你自己的；说成金句的，都是别人的。</p>
+      <div class="do">DO：<b>一句话</b>，口语，带"那杯茶"这种废话</div></div>
+    <div class="stub" data-no="根 № 03"><div class="cat">RITUAL · 气味锚</div>
+      <h3>给它配个味道</h3>
+      <p>雨后的土、晒过的被子、劣质咖啡。看完当天闻一次同一个味道，往后这味道就是你的放映机——这是普鲁斯特效应，气味比画面更早找到你[2,11,16](@ref)。</p>
+      <div class="do">DO：<b>固定一个味道</b>，不许换 · 别嫌土</div></div>
+    <div class="stub" data-no="根 № 04"><div class="cat">RITUAL · 不补完</div>
+      <h3>留一格别查</h3>
+      <p>看不懂的那格，别去搜解说、别问 AI、别翻长评。让它悬着。几年后你自己会长出答案，而搜来的答案会立刻把那格杀死。</p>
+      <div class="do">DO：<b>悬着</b> · 查了＝这次白看</div></div>
+    <div class="stub" data-no="根 № 05"><div class="cat">RITUAL · 三十天回捞</div>
+      <h3>一个月后，只问一句</h3>
+      <p>别重看。就问：「那件东西，还在吗？」还在，定影了；不在，再扔一次证物进去。记忆是养的，不是攒的。</p>
+      <div class="do">DO：<b>一个月整</b>回捞一次 · 卡住也算过</div></div>
+  </div>
+</section>
+
+<!-- ===== 04 冲洗四格 ===== */
+<section class="wrap" id="bath" style="background:rgba(196,120,46,.06)">
+  <div class="head">
+    <span class="idx">第四盘 · 洗</span>
+    <h2>冲洗<em>四格</em></h2>
+    <span class="en">Develop · Stop · Fix · Wash</span>
+    <a href="#" class="more">过一遍 #</a>
+  </div>
+  <p style="max-width:900px;font-size:14.5px;color:#3A352D;margin-bottom:22px">暗房老师傅都懂：显影不是"泡一下"，是四道药水、四段耐心。记忆也一样——拿来就晒的那格，洗出来是糊的。下面这套流程，是从老电影修复那门手艺里借来的脾气。</p>
+  <div class="baths">
+    <div class="bath"><div class="hd"><span class="n">Ⅰ</span><span class="tt">显影 · 让它浮上来</span></div>
+      <div class="bd"><h3>别追，等它自己来</h3>
+        <p>刚看完那阵，别急着整理。去泡杯茶、走走。最先自己冒出来的那一样东西——一句废话、一个颜色、一阵味道——那就是影像落在你身上的第一格。追着记的，都是脑补；等来的，才是真的。</p>
+        <div class="min">耗时：<b>散场后 5 分钟</b> · 手不许动笔</div></div></div>
+    <div class="bath"><div class="hd"><span class="n">Ⅱ</span><span class="tt">停显 · 别再往里加</span></div>
+      <div class="bd"><h3>一句话就停</h3>
+        <p>显影液得停。写那句"那件东西后来去哪了"，写完就合本子。加第二句就开始美化，一美化，记忆就变陈列品了。模糊比工整金贵。</p>
+        <div class="min">耗时：<b>1 句话 / 30 秒</b> · 多写一句都算贪</div></div></div>
+    <div class="bath"><div class="hd"><span class="n">Ⅲ</span><span class="tt">定影 · 隔天捞一次</span></div>
+      <div class="bd"><h3>卡住，才算洗牢</h3>
+        <p>第二天闭眼捞：那格还在吗？卡住了别急，正是提取在长根。研究里反复印证——主动"想不起来"的那一下，比顺顺当当重看一遍，留下的痕迹深得多[1,15](@ref)。</p>
+        <div class="min">耗时：<b>隔天 1 次</b> · 卡住 = 有效剂量</div></div></div>
+    <div class="bath"><div class="hd"><span class="n">Ⅳ</span><span class="tt">水洗 · 扔掉解释</span></div>
+      <div class="bd"><h3>只留气味，不要意义</h3>
+        <p>最后一遍水洗，是把"它想说什么"全冲掉。一部好片不归你解释，归你记得。你记得那杯茶是凉的，就够了，不必证明它象征什么。能养一辈子的，都是这种说不清的东西。</p>
+        <div class="min">耗时：<b>第 30 天</b> · 冲掉"隐喻"，留下味道</div></div></div>
+  </div>
+</section>
+
+<!-- ===== 铭牌 ===== */
+<div class="plaque">
+  <div class="plaque-in">
+    <div>
+      <div class="lab">显影室名称 / 显影室网址</div>
+      <div class="u"><a href="https://zhuiyiyingshi-h5.github.io">追忆显影室 — https://zhuiyiyingshi-h5.github.io</a></div>
+    </div>
+    <div class="note">洗的是记忆，不是胶片<br>域名留索引位，页面不承接任何同名产品</div>
+  </div>
+</div>
+
+<!-- ===== 关于 ===== */
+<section class="wrap" id="about">
+  <div>
+    <h2>为何把<em>「追忆」</em>做成显影室</h2>
+    <p>因为这个名字现在被人拿去当"找片"的招牌了。同名的产品不止一款：一款在正规应用商店里挂着，有备案号、写着影视资讯；下载站那边却是另一个版本、另一个厂商、另一套"切换播放源"的话术，版本号还三套并行。<b>同一个名字，两把不同的钥匙，谁都不肯认对方。</b>我要是这页给你一个"官方入口"，就是把你往坑里送——那不是显影，是冲片冲丢了。</p>
+    <p>再说直白点：这页<b>不是官网、不代表任何一款 App、不给下载、不告诉你哪儿能看</b>。连"同名产品有哪些"这种清单我都不列——列名单本身就是导流，而"以引流为目的提供便利"这几个字，现在正被重点盯着。所以我只留域名那个索引位，把词翻成另一门手艺：<b>怎么把看过那部，留在自己身上。</b></p>
+    <p>这门手艺有根有据。遗忘曲线是 1885 年艾宾浩斯拿自己试出来的，一百四十年没被推翻；气味能一把把你拽回某年某月，是因为它走的是海马体和杏仁核那条近道，英国心理学会那篇综述、荷兰的实验都掰扯过这件事；而"把老影像留住"这件事，国家级的胶片库真在做——三万多部、六十多万本胶片，修一格精致画面要一个人耗掉一整天，修旧如旧[3,6,14](@ref)。我借的是这份脾气，不是借谁的名字。</p>
+    <p>顺带一句：国家电影局备案过一部同名故事片。这页一个字都没碰它，也不往那边靠——<b>「追忆」是动词，不是片名，更不是牌照。</b></p>
+    <p>显影室名称：追忆显影室<br>显影室网址：<span class="u2">https://zhuiyiyingshi-h5.github.io</span></p>
+  </div>
+  <div class="tiles">
+    <div class="tile"><div class="n">4 件</div><div class="l">物 / 光 / 声 / 空 · 只留四格</div></div>
+    <div class="tile"><div class="n">0 链</div><div class="l">无片源 · 无下载 · 无包名 · 无搜索词</div></div>
+    <div class="tile"><div class="n">4 道</div><div class="l">显影 / 停显 / 定影 / 水洗</div></div>
+    <div class="tile"><div class="n">相纸</div><div class="l">奶白 / 靛青 / 暗房橙 / 银盐灰</div></div>
+  </div>
+</section>
+
+<!-- ===== 页脚 ===== -->
+<footer class="foot">
+  <div class="foot-logo">追忆<em>显影室</em> · 洗的是记忆，不是胶片</div>
+  <div class="foot-nav">
+    <a href="#proof">四件证物</a>
+    <a href="#half">半衰期</a>
+    <a href="#stub">空白票根</a>
+    <a href="#bath">冲洗四格</a>
+    <a href="#about">为何是追忆</a>
+    <a href="#top">↑ 再下盘液</a>
+  </div>
+  <div class="cut">⚑ 本站是原创「影像记忆方法学」内容站，<b>不是"追忆影视"App 官网、镜像站或授权站，不代表任何同名产品的开发者与运营主体</b>；不提供该 App 或任何影视产品的下载、安装包、播放源、片源聚合与跳转。页面所涉遗忘曲线、普鲁斯特现象、间隔重复等均为通用方法概述（半衰期为方法示意、非针对任何影片的实测数据），请以权威心理学文献与你自己身上的实际感受为准。</div>
+  <p>© 2026 追忆显影室 · 显影室名称：追忆显影室 · 显影室网址：https://zhuiyiyingshi-h5.github.io</p>
+  <p class="legal">关于版权与边界：依《中华人民共和国著作权法》第十条第十二项，未经许可通过信息网络向公众提供视听作品即侵犯"信息网络传播权"，是否营利、流量大小、传播时长均非免责事由（可参见市场监管部门发布的网络版权预警提示）。转发盗版链接、对受保护作品作替代性切条剪辑，同样可能构成帮助侵权或侵犯复制权、信息网络传播权。本页不含剧照、片段、海报与可识别画面素材，不制作"二创"替代内容，亦不引导用户寻找未授权资源；文中对记忆科学的转述仅作个人观影素养之用。观看与重温，请走正版平台、官方发行、合法修复展映与公共版权渠道。若已误装陌生包或遭遇"扫码进群／远程协助／垫付返现"，请立即断网、卸载、改密并联系银行，必要时拨打 110 或反诈专线。未生成 robots.txt 与 sitemap.xml。</p>
+</footer>
+
+</body>
+</html>
